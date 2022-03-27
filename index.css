@@ -1,14 +1,26 @@
+body {
+    background: #b9510b;
+}
+
+.container {
+        min-width:960px;
+		min-height:960px;
+		background-image:url(images.jpg/logo.png);
+		background-position:center;
+		background-repeat:no-repeat;
+        opacity: 0.2;
+    }
+
 .navbar {
     background-color: #fa6600;
     top: 0; 
     left: 0; 
     right: 0; 
     bottom: 0;  
-   position: absolute;
-   width: auto;
-   height: 50px;
+    position: absolute;
+    width: auto;
+    height: 50px;
 }
-
 
 .logo {
     width: 120px;
@@ -37,8 +49,8 @@
 
 .navin input {
 
-    margin-top: 12px;
-    border-radius: 5px;
+  margin-top: 12px;
+  border-radius: 5px;
   border: solid 1.5px #D3D3D3;
   -webkit-transition: 1s; 
   transition: 1s;
