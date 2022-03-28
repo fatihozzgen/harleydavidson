@@ -1,15 +1,41 @@
 body {
-    background: #b9510b;
+    background: #b9510b; 
+   
 }
 
+
 .container {
-        min-width:960px;
-		min-height:960px;
-		background-image:url(images.jpg/logo.png);
-		background-position:center;
-		background-repeat:no-repeat;
-        opacity: 0.2;
-    }
+    min-width:960px;
+    min-height:960px;   
+    
+    
+  }
+  .cards1{
+    display: flex;
+  }
+  
+  .cards2 {
+    display: flex;
+  }
+
+  .cards3 {
+    display: flex;
+  }
+  
+  .container::after {
+    content: "";
+    background: url(images.jpg/logo.png);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    background-repeat:no-repeat; 
+    background-position:center;
+  }
+  
 
 .navbar {
     background-color: #fa6600;
@@ -65,3 +91,48 @@ body {
     box-shadow: 0 0 5pt 2pt #D3D3D3;
     outline-width: 0px;
     }
+    
+
+
+  .card {
+    margin: 20px;
+    height: 300px;
+    width: 450px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 100px;
+    opacity: 0.9;
+  }
+  
+  .urunler {
+    height: 300px;
+  width: 450px;
+  object-fit: cover;
+
+  }
+
+
+  .caption {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(100%);
+    transition: all 0.4s;
+
+  }
+
+  .card:hover .caption{
+    transform: translateY(0%);
+    cursor: pointer;
+  }
+  
+ 
