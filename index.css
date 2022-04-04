@@ -30,7 +30,7 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     z-index: -1;  
     background-repeat:no-repeat; 
     background-position:center;
@@ -70,7 +70,8 @@ body {
 
 .navin {
   float: none;
-  padding-left: 700px;
+  float: right;
+  padding-right: 20px;
 }
 
 .navin input {
@@ -135,4 +136,52 @@ body {
     cursor: pointer;
   }
   
+
+.aboutdiv {
+  border: 3px solid black;
+   -webkit-box-shadow: 0px 0px 31px 6px rgba(0,0,0,0.78); 
+box-shadow: 0px 0px 31px 6px rgba(0,0,0,0.78);
+background-color: #b9510b;
+margin-top: 14%;
+border-radius: 25px;
+}
+
+ .baslik {
+   font-size: 40px;
+   padding-right: 10px;
+   padding-left: 10px;
+ }
  
+ .paragraf {
+   font-size: 24px;
+   font-style: oblique;
+   padding-right: 10px;
+   padding-left: 10px;
+ }
+
+.instalogo {
+  width: 100px;
+}
+
+.gitlogo {
+  width: 100px;
+}
+
+.linklogo {
+  width: 100px;
+}
+
+.contactdiv {
+  border: 3px solid black;
+  float: left;
+  -webkit-box-shadow: 0px 0px 31px 6px rgba(0,0,0,0.78); 
+  box-shadow: 0px 0px 31px 6px rgba(0,0,0,0.78);
+  background-color: #b9510b;
+  margin: 18% 20% 20% 35%;
+  border-radius: 25px;
+}
+
+.cont {
+  float: left;
+  margin: 30px;
+}
